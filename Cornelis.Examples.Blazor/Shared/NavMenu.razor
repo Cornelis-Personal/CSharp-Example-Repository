@@ -1,0 +1,34 @@
+﻿<Sidebar @ref="sidebar">
+    <SidebarContent>
+        <SidebarBrand>
+            <a href="">Blazorise Sidebar</a>
+        </SidebarBrand>
+        <SidebarNavigation>
+            <SidebarLabel>Main</SidebarLabel>
+            <SidebarItem>
+                <SidebarLink To="/" Title="Home">
+                    <Icon Name="IconName.Home" Margin="Margin.Is3.FromRight" />Home
+                </SidebarLink>
+            </SidebarItem>
+            <SidebarItem>
+                <SidebarLink To="/Validation" Title="Home">
+                    <Icon Name="IconName.Check" Margin="Margin.Is3.FromRight" />Validation
+                </SidebarLink>
+            </SidebarItem>
+            <SidebarItem>
+                <SidebarLink To="/DataAccess" Title="Home">
+                    <Icon Name="IconName.Dashboard" Margin="Margin.Is3.FromRight" />Data Access
+                </SidebarLink>
+            </SidebarItem>
+        </SidebarNavigation>
+    </SidebarContent>
+</Sidebar>
+
+@code {
+    Sidebar sidebar;
+
+    void ToggleSidebar()
+    {
+        sidebar.Toggle();
+    }
+}

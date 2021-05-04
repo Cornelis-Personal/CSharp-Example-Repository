@@ -1,0 +1,48 @@
+﻿@inject IPermissionsService PermissionsService
+
+@if (loading)
+{
+    @Loading
+}
+else
+{
+    if (authorized)
+    {
+        @Authoriszed
+    }
+    else
+    {
+        @NotAuthoriszed
+    }
+}
+
+@code {
+    [CascadingParameter]
+    public string Username { get; set; }
+
+    [Parameter]
+    public RenderFragment Authoriszed { get; set; }
+
+    [Parameter]
+    public RenderFragment NotAuthoriszed { get; set; }
+
+    [Parameter]
+    public RenderFragment Loading { get; set; }
+
+    bool authorized;
+    bool loading;
+
+    protected override async Task OnInitializedAsync()
+    {
+        // Set the default state
+        authorized = false;
+        loading = true;
+
+        // Check if the user is not Authorised
+        authorized = await PermissionsService.IsLoggedIn();
+        loading = false;
+
+        //
+        StateHasChanged();
+    }
+}

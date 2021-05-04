@@ -1,0 +1,17 @@
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.Services.deps.json
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.Services.dll
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\ref\Cornelis.Examples.Services.dll
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.Services.pdb
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.csprojAssemblyReference.cache
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.AssemblyInfoInputs.cache
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.AssemblyInfo.cs
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.dll
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\ref\Cornelis.Examples.Services.dll
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.pdb
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.DataAccess.dll
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.Models.dll
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.DataAccess.pdb
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\bin\Debug\net5.0\Cornelis.Examples.Models.pdb
+C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Services\obj\Debug\net5.0\Cornelis.Examples.Services.csproj.CopyComplete

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31205.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cornelis.Examples.Blazor", "Cornelis.Examples.Blazor\Cornelis.Examples.Blazor.csproj", "{9816376F-1927-4C4F-A02B-0C48FCF87A57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cornelis.Examples.API", "Cornelis.Examples.API\Cornelis.Examples.API.csproj", "{96A1D835-66C8-480E-A261-34B783E28801}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cornelis.Examples.Models", "Cornelis.Examples.Models\Cornelis.Examples.Models.csproj", "{8B0EBBF6-09D0-4486-AAD9-98507A23CAC5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cornelis.Examples.Services", "Cornelis.Examples.Services\Cornelis.Examples.Services.csproj", "{D3B28BBA-BEF9-415E-B3C8-EC5C56B69460}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cornelis.Examples.DataAccess", "Cornelis.Examples.DataAccess\Cornelis.Examples.DataAccess.csproj", "{5ADC6661-BDE4-42F3-B432-CF4744F9FB29}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9816376F-1927-4C4F-A02B-0C48FCF87A57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9816376F-1927-4C4F-A02B-0C48FCF87A57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9816376F-1927-4C4F-A02B-0C48FCF87A57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9816376F-1927-4C4F-A02B-0C48FCF87A57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96A1D835-66C8-480E-A261-34B783E28801}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96A1D835-66C8-480E-A261-34B783E28801}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96A1D835-66C8-480E-A261-34B783E28801}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96A1D835-66C8-480E-A261-34B783E28801}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0EBBF6-09D0-4486-AAD9-98507A23CAC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0EBBF6-09D0-4486-AAD9-98507A23CAC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0EBBF6-09D0-4486-AAD9-98507A23CAC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0EBBF6-09D0-4486-AAD9-98507A23CAC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B28BBA-BEF9-415E-B3C8-EC5C56B69460}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B28BBA-BEF9-415E-B3C8-EC5C56B69460}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B28BBA-BEF9-415E-B3C8-EC5C56B69460}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B28BBA-BEF9-415E-B3C8-EC5C56B69460}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5ADC6661-BDE4-42F3-B432-CF4744F9FB29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5ADC6661-BDE4-42F3-B432-CF4744F9FB29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5ADC6661-BDE4-42F3-B432-CF4744F9FB29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5ADC6661-BDE4-42F3-B432-CF4744F9FB29}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FEC16B53-3C0C-4869-B12C-AC3BA47FB933}
+	EndGlobalSection
+EndGlobal

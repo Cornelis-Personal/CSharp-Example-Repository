@@ -1,0 +1,6 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\User\source\repos\Cornelis.Examples.Blazor\Cornelis.Examples.Blazor\obj\Debug\net5.0\scopedcss\bundle\" />
+  <ContentRoot BasePath="_content/Blazorise" Path="C:\Users\User\.nuget\packages\blazorise\0.9.3.6\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Bootstrap" Path="C:\Users\User\.nuget\packages\blazorise.bootstrap\0.9.3.6\build\..\staticwebassets\" />
+  <ContentRoot BasePath="_content/Blazorise.Sidebar" Path="C:\Users\User\.nuget\packages\blazorise.sidebar\0.9.3.6\build\..\staticwebassets\" />
+</StaticWebAssets>

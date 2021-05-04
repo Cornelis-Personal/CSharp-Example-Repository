@@ -1,0 +1,174 @@
+﻿@page "/Validation"
+
+@inject IPermissionsService PermissionService
+@inject NavigationManager NavigationManager
+
+<Title>Validation</Title>
+<Label> Play around with custom Blazor validation on this page.</Label>
+<Card>
+
+    <CustomAuthentication>
+        <Loading>
+            <CardHeader>
+                Loading
+            </CardHeader>
+            <CardBody>
+                Please be patient while the page loads...
+            </CardBody>
+        </Loading>
+        <Authoriszed>
+            <CardHeader>
+                Authorized!
+            </CardHeader>
+            <CardBody>
+                You have successfully authorised the page.
+            </CardBody>
+        </Authoriszed>
+        <NotAuthoriszed>
+            <CardHeader>
+                Not Authorised!
+            </CardHeader>
+            <CardBody>
+                <Field>
+                    <FieldLabel>Login or Register</FieldLabel>
+                </Field>
+
+                <Field>
+                    <FieldLabel>Insert Username:</FieldLabel>
+                    <FieldBody>
+                        <TextEdit @bind-text="@Username" Placeholder="Username..." />
+                    </FieldBody>
+                </Field>
+                <Field>
+                    <FieldLabel>Insert Password:</FieldLabel>
+                    <FieldBody>
+                        <TextEdit @bind-text="@Password" Placeholder="Password..." Role="TextRole.Password" />
+                    </FieldBody>
+                </Field>
+                <Field>
+
+                    <Button Color="Color.Dark" @onclick="Register">Register</Button>
+                    <Button Color="Color.Dark" @onclick="Login">Login</Button>
+                </Field>
+
+                <Field>
+                    <Alert Color="@alertColor" @bind-Visible="@displayAlert">
+                        <AlertMessage>@errorTitle</AlertMessage>
+                        <AlertDescription>@errorMessage</AlertDescription>
+                    </Alert>
+                </Field>
+            </CardBody>
+        </NotAuthoriszed>
+    </CustomAuthentication>
+</Card>
+
+@code {
+
+    #region Variables
+
+    string Username { get; set; }
+    string Password { get; set; }
+
+    string errorTitle;
+    string errorMessage;
+    Color alertColor;
+    bool displayAlert = false;
+
+    #endregion
+
+    #region Functions
+
+    async void Register()
+    {
+        string error = string.Empty;
+
+        if (!Validate(ref error))
+        {
+            DisplayValidationError(error);
+            StateHasChanged();
+            return;
+        }
+
+        var success = await PermissionService.RegisterUser(Username, Password);
+
+        if (success)
+        {
+            DisplaySucces("You registed succesfully.");
+        }
+        else
+        {
+            DisplayError("User already exists.");
+        }
+
+        StateHasChanged();
+    }
+
+    async void Login()
+    {
+        string error = string.Empty;
+
+        if (!Validate(ref error))
+        {
+            DisplayValidationError(error);
+            StateHasChanged();
+            return;
+        }
+
+        var success = await PermissionService.LoginAsync(Username, Password);
+
+        if (!success)
+        {
+            DisplayError("Login Falsed");
+            StateHasChanged();
+            return;
+        }
+
+        displayAlert = false;
+        NavigationManager.NavigateTo("/Validation", true);
+
+        StateHasChanged();
+    }
+
+    bool Validate(ref string error)
+    {
+        if (string.IsNullOrWhiteSpace(Username))
+        {
+            error = "Username is empty.";
+            return false;
+        }
+
+        if (string.IsNullOrWhiteSpace(Password))
+        {
+            error = "Password is empty.";
+            return false;
+        }
+
+        return true;
+    }
+    void DisplayValidationError(string message)
+    {
+        errorTitle = "Validation Error";
+        displayAlert = true;
+        errorMessage = message;
+        alertColor = Color.Warning;
+
+    }
+
+    void DisplayError(string message)
+    {
+        errorTitle = "Error";
+        displayAlert = true;
+        errorMessage = message;
+        alertColor = Color.Danger;
+
+    }
+
+    void DisplaySucces(string message)
+    {
+        errorTitle = "Success";
+        displayAlert = true;
+        errorMessage = message;
+        alertColor = Color.Success;
+    }
+    #endregion
+}
